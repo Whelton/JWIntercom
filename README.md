@@ -7,14 +7,14 @@ Make sure to **define your Intercom App ID (*kIntercomAppID*)** at the top of **
 
 ---
 
-###Start User Session###    
+###Start User Session
     intercom = [[JWIntercom alloc] init];
     [intercom startSessionWithUserEmail:@"user@email.com"];
 
 
 
 
-###Start User Session With Custom Data### 
+###Start User Session With Custom Data
     NSMutableDictionary *myCustomData = [[NSMutableDictionary alloc] init];
     [myCustomData setValue:@"jwhelton" forKey:@"github"];
     [myCustomData setValue:@"premium" forKey:@"account_type"];
@@ -22,7 +22,7 @@ Make sure to **define your Intercom App ID (*kIntercomAppID*)** at the top of **
     intercom = [[JWIntercom alloc] init];
     [intercom startSessionWithUserEmail:@"user@email.com" customData:myCustomData];
 
-###End User Session### 
+###End User Session
     [intercom stopSession];
 
 ----
